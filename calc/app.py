@@ -1,16 +1,17 @@
-from flask import Flask
-from operations import *
+from flask import Flask, request
+from operations import add, mult, sub, div
 
 
-app = flask(__name__)
+app = Flask(__name__)
 
 
-@app.route('/add')
+@app.route("/add")
 def adding():
     """Returns the sum of 2 parameters"""
     a = int(request.args.get("a"))
     b = int(request.args.get("b"))
-    return str(add(a, b))
+    result = add(a,b)
+    return str(result)
 
 
 @app.route('/subtract')
@@ -33,4 +34,4 @@ def divide():
     """
     a = int(request.args.get("a"))
     b = int(request.args.get("b"))
-    return div(a, b)
+    return str(div(a, b))
