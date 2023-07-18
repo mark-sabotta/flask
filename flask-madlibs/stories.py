@@ -47,7 +47,7 @@ story1 = Story(
     "A History Tale",
     ["place", "noun", "verb", "adjective", "plural_noun"],
     """Once upon a time in a long-ago {place}, there lived a
-       large {adjective} {noun}. It loved to {verb} {plural_noun}."""
+    large {adjective} {noun}. It loved to {verb} {plural_noun}."""
 )
 
 story2 = Story(

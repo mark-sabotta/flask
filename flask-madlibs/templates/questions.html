@@ -13,8 +13,9 @@
             <p>{{ prompt }}:
                 <input name="{{prompt}}">
             </p>
-        {% endfor %}
-            <button>Submit</button>
+        {% endfor %}"
+        <input type="hidden" name ="story_id" value="{{ story_id}}">
+        <button>Submit</button>
     </form>
 </body>
 </html>
